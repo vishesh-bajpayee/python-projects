@@ -26,3 +26,7 @@ scissors = """
       (____)
 ---.__(___)
 """
+
+choices_list = [rock,paper,scissors]
+
+
