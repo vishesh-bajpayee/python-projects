@@ -53,6 +53,5 @@ elif random_generator == 1 and user_choice_num == 0:
 	print('Computer Wins')
 elif random_generator == 2 and user_choice_num == 1:
 	print("Computer Wins")
-
-
-
+else:
+	print("invalid error occured ")
