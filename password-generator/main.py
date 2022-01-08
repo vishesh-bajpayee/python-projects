@@ -47,4 +47,10 @@ random.shuffle(password_list)
 print(password_list)
 
 
-print("".join(password_list))
+
+
+
+
+
+
+

@@ -22,7 +22,7 @@ def run_game():
 	random_word = generate_random_word()
 	blank_list = ["_" for x in range(0,len(random_word))]
 
-	while game_over == False:
+	while game_over == False or user_score == len(random_word):
 		guessed_letter = input("Enter your guess: ")
 
 		if user_life == 1:
@@ -41,16 +41,16 @@ def run_game():
 					game_over = True
 				else: 
 					user_life -= 1
-					print(f"You guessed incorrectly. You have {user_life} life remaining.")
+					print(f" {user_name}! You guessed incorrectly. You have {user_life} life remaining.")
 					print(hangman_pics.HANGMANPICS[-user_life])
 				
 			else:
 				print("Invalid Error")
 			
 		else:
-			print("Your guess should be a single letter!")
+			print(f"{user_name}! Your guess should be a single letter!")
+			
 
-run_game()
 
 
 
